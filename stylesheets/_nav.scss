@@ -1,0 +1,26 @@
+nav {
+	ul {
+	margin: 0;
+	font-size: 16pt;
+	}
+	li {
+	display: inline-block;
+	width:15%;
+	text-align: center;
+	padding: 10px;
+	}
+}
+.menu {
+	font-size: 2em;
+	display: none;
+	}
+@media all and (max-width: 768px)
+{
+	nav {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+	}
+}

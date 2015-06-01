@@ -1,0 +1,40 @@
+@import 'nav';
+@import 'media';
+
+$unit: 10px;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+            border-radius: $radius;
+}
+
+.body-image {
+	width: 30 * $unit;	
+	height: 15 * $unit;
+	background-size: cover;
+	margin: 1 * $unit;
+	float: left;
+	@include border-radius(10px);
+}
+
+.col-1{
+	float: left;
+	margin: 1 * $unit;
+	width: 25* $unit;
+	height: 25*$unit;
+	background: orange;
+	padding: 25px;
+}
+.body-paragraph{
+	@include border-radius(5px);
+	background: $favoriteColor;
+	width: 25*$unit;
+	margin: auto;
+}
+.paragraph-notice{
+	@extend .body-paragraph;
+	color: white;
+}
